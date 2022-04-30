@@ -1,0 +1,28 @@
+# IntelliJ settings
+*.iml
+.idea/
+
+# OS
+.DS_STORE
+
+# Coverage data
+coverage/
+.nyc_output/
+test_results.xml
+mochawesome.json
+
+# Node-specific things
+node_modules/
+npm-debug.log
+yarn-error.log
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+### Changelog ###
+CHANGELOG.md

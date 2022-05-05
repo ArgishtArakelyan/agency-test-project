@@ -1,0 +1,65 @@
+.welcome {
+    display: flex;
+    align-items: center;
+    background-color: var(--x-bg-2);
+    //min-height: 100vh;
+    min-height: calc(100vh - 80px);
+    padding: 64px 0;
+
+    .innerWrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .welcome-main-text {
+        flex: 1;
+        max-width: 512px;
+
+        .welcome-main-textWrap {
+            position: relative;
+
+            &::before {
+                content: "";
+                background-image: url('../../../assets/images/Star.png');
+                position: absolute;
+                top: 0px;
+                right: 0;
+                transform: translate(-92px, 16px);
+                width: 148px;
+                height: 148px;
+                z-index: 0;
+                background-size: 100%;
+            }
+        }
+
+        .welcome-action {
+            margin-top: 26px;
+
+            .light-bg {
+                margin-left: 16px;
+            }
+        }
+
+        .welcome-user {
+            display: flex;
+            margin-top: 112px;
+
+            img {
+                width: 4.8rem;
+                height: 4.8rem;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .welcome-user-info {
+                margin-left: 1.6rem;
+            }
+        }
+    }
+
+
+    .welcome-img {
+        flex: 1;
+        max-width: 570px;
+    }
+}

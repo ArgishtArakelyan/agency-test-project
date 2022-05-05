@@ -1,55 +1,49 @@
-@import '../../_settings/_variables.scss';
-
-.button {
-  -webkit-appearance: none;
-  border: 0;
-  outline: 0;
-  display: block;
-  font-family: var(--base-font-family);
-  font-size: 0.9em;
-  font-weight: 600;
+// @import '../../_settings/_variables.scss';
+.btn {
+  padding: 1.6rem 3.4rem;
+  border: 1px solid;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  background-color: transparent;
   text-transform: uppercase;
-  border-radius: 3px;
-  cursor: pointer;
-  position: relative;
-}
+  font-family: 'Epilogue-Black';
 
-/* Size */
-.small {
-  padding: 0.5em 0.6em;
-}
-
-.medium {
-  padding: 1.1em 1.3em;
-}
-
-.large {
-  padding: 1.7em 2.4em;
-}
-
-/* Theme */
-.default {
-  color: #fff;
-  background: var(--brand);
-  border: 1px solid var(--brand);
-}
-
-.rounded {
-  color: var(--brand);
-  background: #fff;
-  border: 1px solid var(--brand);
-  transition: color 0.3s ease, background 0.3s ease;
-
-  &:hover {
-    color: #fff;
-    background: var(--brand);
+  &.dark-primary {
+    background-color: var(--x-bg-9);
+    border-color: var(--x-bg-9);
+    color: var(--x-bg-1);
   }
-}
 
-/* Disabled */
-.disabled {
-  color: var(--grey-2);
-  background: color(var(--grey-4) tint(40%));
-  border-color: var(--grey-4);
-  cursor: default;
+  &.dark-secondary {
+    border-color: var(--x-bg-42);
+    color: var(--x-bg-1);
+  }
+
+
+  &.light-primary {
+    background-color: var(--x-bg-3);
+    border-color: var(--x-bg-3);
+    color: var(--x-bg-1);
+  }
+
+  &.light-secondary {
+    background-color: var(--x-bg-1);
+    border-color: var(--x-bg-1);
+    color: var(--x-bg-20);
+  }
+
+  &.light-transparent {
+    background-color: transparent;
+    border: 0;
+    color: var(--x-bg-1);
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-family: 'Epilogue-Regular';
+  }
+
+  &.light-shadow {
+    background-color: var(--x-bg-1);
+    border-color: var(--x-bg-1);
+    box-shadow: 0px 3px 9px #39140014;
+  }
 }

@@ -1,0 +1,108 @@
+@import 'variables';
+
+html {
+  height: 100%;
+}
+
+body,
+html {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1;
+  position: relative;
+  font-family: 'Epilogue-Regular';
+  font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--defaultTextColor);
+  padding: 0;
+  margin: 0;
+}
+
+p,
+blockquote,
+pre,
+span,
+strong,
+strong,
+sub,
+sup,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  color: var(--defaultTextColor);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  color: var(--defaultTextColor);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.innerWrap {
+  position: relative;
+  width: 100%;
+  max-width: 1296px;
+  padding: 0 8px;
+  margin: 0 auto;
+}
+
+.animation {
+  animation-name: slide-in;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-5%);
+    opacity: 0.7;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

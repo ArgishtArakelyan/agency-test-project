@@ -1,0 +1,57 @@
+.text-1 {
+    font-size: 1.6rem;
+    color: var(--x-bg-3);
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.text-2 {
+    position: relative;
+    font-family: 'Epilogue-Bold';
+    margin-top: 34px;
+    font-size: 7.2rem;
+    line-height: 80px;
+    letter-spacing: -2px;
+    z-index: 1;
+
+    span {
+        display: block;
+        color: var(--x-bg-1);
+    }
+
+}
+
+.text-3 {
+    font-size: 1.6rem;
+    color: var(--x-bg-5);
+    line-height: 32px;
+}
+
+.text-4 {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+    color: var(--x-bg-1);
+    //line-height: 32px;
+    font-size: 1.6rem;
+}
+
+.text-5 {
+    color: var(--x-bg-20);
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    letter-spacing: -1px;
+    font-family: 'Epilogue-Bold';
+}
+
+.text-6 {
+    color: var(--x-bg-20);
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+.text-7 {
+    color: var(--x-bg-21);
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+}

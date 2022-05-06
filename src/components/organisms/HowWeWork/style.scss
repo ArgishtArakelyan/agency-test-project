@@ -1,0 +1,56 @@
+.howWeWork {
+    background-color: var(--x-bg-12);
+    padding-bottom: 11rem;
+
+    .innerWrap {
+        display: flex;
+        gap: 15rem;
+    }
+
+    .howWeWork-text {
+        flex: 1;
+
+        .text-5 {
+            font-size: 4rem;
+            line-height: 4.8rem;
+        }
+    }
+
+    .howWeWork-ordered-lists {
+        display: flex;
+        flex-direction: column;
+        gap: 3.8rem;
+        flex: 1;
+        padding-top: 5.6rem;
+
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 3.2rem;
+        }
+
+        span {
+            &.text-5 {
+                min-width: 6.4rem;
+                font-size: 7.2rem;
+                letter-spacing: -2px;
+            }
+        }
+
+        p {
+            &.text-5 {
+                font-size: 2.4rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .howWeWork {
+        padding-bottom: 8rem;
+        .innerWrap{
+            flex-direction: column;
+            gap: 4rem;
+        }
+    }
+}

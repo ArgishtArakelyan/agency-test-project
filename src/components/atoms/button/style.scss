@@ -7,16 +7,25 @@
   background-color: transparent;
   text-transform: uppercase;
   font-family: 'Epilogue-Black';
+  transition: all 0.3s linear;
+  transition-property: color, border-color,
+    background-color;
 
   &.dark-primary {
     background-color: var(--x-bg-9);
     border-color: var(--x-bg-9);
     color: var(--x-bg-1);
+
+    &:hover {}
   }
 
   &.dark-secondary {
     border-color: var(--x-bg-42);
     color: var(--x-bg-1);
+
+    &:hover {
+      border-color: var(--x-bg-3);
+    }
   }
 
 
@@ -24,12 +33,16 @@
     background-color: var(--x-bg-3);
     border-color: var(--x-bg-3);
     color: var(--x-bg-1);
+
+    &:hover {}
   }
 
   &.light-secondary {
     background-color: var(--x-bg-1);
     border-color: var(--x-bg-1);
     color: var(--x-bg-20);
+
+    &:hover {}
   }
 
   &.light-transparent {
@@ -39,11 +52,41 @@
     font-size: 1.6rem;
     text-transform: capitalize;
     font-family: 'Epilogue-Regular';
+
+    &:hover {
+      background-color: var(--x-bg-3);
+      border-color: var(--x-bg-3);
+    }
   }
 
   &.light-shadow {
     background-color: var(--x-bg-1);
     border-color: var(--x-bg-1);
     box-shadow: 0px 3px 9px #39140014;
+
+    &:hover {
+      background-color: var(--x-bg-3);
+      border-color: var(--x-bg-3);
+      color: var(--x-bg-1);
+    }
+  }
+
+  &.menu-toggle-btn{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border-color: var(--x-bg-42);
+    img{
+      width: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    &.menu-toggle-btn {
+      display: flex;
+    }
   }
 }

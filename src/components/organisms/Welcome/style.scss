@@ -4,45 +4,36 @@
     background-color: var(--x-bg-2);
     //min-height: 100vh;
     min-height: calc(100vh - 80px);
-    padding: 64px 0;
+    padding: 6.4rem 0;
 
     .innerWrap {
         display: flex;
         justify-content: space-between;
+        gap: 11rem;
     }
 
     .welcome-main-text {
         flex: 1;
-        max-width: 512px;
+        max-width: 51rem;
 
         .welcome-main-textWrap {
-            position: relative;
-
-            &::before {
-                content: "";
-                background-image: url('../../../assets/images/Star.png');
-                position: absolute;
-                top: 0px;
-                right: 0;
-                transform: translate(-92px, 16px);
-                width: 148px;
-                height: 148px;
-                z-index: 0;
-                background-size: 100%;
-            }
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: 14.6rem;
+            background-position: 75% 10%;
         }
 
         .welcome-action {
             margin-top: 26px;
 
             .light-bg {
-                margin-left: 16px;
+                margin-left: 1.6rem;
             }
         }
 
         .welcome-user {
             display: flex;
-            margin-top: 112px;
+            margin-top: 11.02rem;
 
             img {
                 width: 4.8rem;
@@ -55,11 +46,45 @@
                 margin-left: 1.6rem;
             }
         }
+
+        .light-transparent {
+            margin-left: 2.4rem;
+        }
     }
 
 
     .welcome-img {
         flex: 1;
-        max-width: 570px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .welcome{
+        min-height: initial;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .welcome{
+        .innerWrap{
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .welcome-main-text{
+            max-width: initial;
+            order: 1;
+            .welcome-main-textWrap{
+                background-image: none !important;
+            }
+
+            .welcome-user {
+                margin-top: 4.8rem;
+            }
+        }
     }
 }

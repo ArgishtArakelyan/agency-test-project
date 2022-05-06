@@ -1,0 +1,52 @@
+.videoReel {
+    background-color: var(--x-bg-12);
+
+    .innerWrap {
+        padding: 12.6rem 24px 10.6rem;
+        display: flex;
+        gap: 15rem;
+        border-top: 1px solid var(--x-bg-13);
+    }
+
+    .video {
+        flex: 1;
+
+        //background: red;
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    .videoReel-text {
+        flex: 1;
+        max-width: 47rem;
+
+        .text-5 {
+            font-size: 4rem;
+            line-height: 4.8rem;
+        }
+    }
+}
+
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-mute-button,
+video::-webkit-media-controls-start-playback-button {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px){
+    .videoReel {
+        .innerWrap{
+            flex-direction: column;
+            gap: 4rem;
+            padding: 8rem 24px 4rem;
+        }
+
+        .videoReel-text{
+            max-width: initial;
+        }
+    }
+}

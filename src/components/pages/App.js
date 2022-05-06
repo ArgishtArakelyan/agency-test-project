@@ -1,12 +1,22 @@
-import * as React from 'react';
-import Welcome from '../organisms/Welcome';
-
-import * as view from '../templates/default/styles.scss';
+import React from 'react'
+import Navigation from '../organisms/Navigation'
+import Welcome from '../organisms/Welcome'
+import About from '../organisms/About'
+import HowWeWork from '../organisms/HowWeWork'
+import VideoReel from '../organisms/VideoReel'
+import Features from '../organisms/Features'
 
 const App = () => (
-  <main className={view.default}>
-    <Welcome />
-  </main>
-);
+  <>
+    <Navigation />
+    <main>
+      <Welcome />
+      <About />
+      <HowWeWork />
+      <VideoReel />
+      <Features />
+    </main>
+  </>
+)
 
-export default App;
+export default App

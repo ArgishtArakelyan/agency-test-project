@@ -1,0 +1,112 @@
+.about {
+    background-color: var(--x-bg-12);
+    padding-bottom: 14.8rem;
+
+    .partners {
+        background-color: var(--x-bg-12);
+
+        .img-wrap {
+            padding: 7.4rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+
+
+            img {
+                max-width: 100%;
+            }
+
+        }
+    }
+
+    .img-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 13rem;
+        padding-top: 10rem;
+        border-top: 1px solid var(--x-bg-13);
+    }
+
+    .about-img {
+        flex: 1;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .about-text {
+        flex: 1;
+        max-width: 47rem;
+
+        .btn {
+            margin-top: 2.6rem;
+        }
+    }
+}
+
+.about-progress {
+    margin-top: 16rem;
+
+    .item-wrap {
+        display: flex;
+        border: 1px solid var(--x-bg-13);
+        border-radius: 6px;
+
+        .item {
+            padding: 4.8rem;
+            flex: 1;
+            border-right: 1px solid var(--x-bg-13);
+
+            &:last-child {
+                border: 0;
+            }
+
+            .text-5 {
+                font-size: 4rem;
+                line-height: 4.8rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .about{
+        padding-bottom: 8rem;
+        .partners{
+            .img-wrap{
+                justify-content: center;
+                gap: 4rem 0;
+                .img{
+                    flex: 0 0 50%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .img-text{
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .about-text{
+            max-width: initial;
+        }
+    }
+
+    .about-progress {
+        margin-top: 10rem;
+        .item-wrap{
+            flex-direction: column;
+            .item, .item:last-child{
+                border-top: 1px solid var(--x-bg-13);
+                &:first-child{
+                    border: 0;
+                }
+            }
+        }
+    }
+}

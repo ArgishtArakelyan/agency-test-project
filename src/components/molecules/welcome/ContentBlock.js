@@ -1,8 +1,9 @@
-import React from 'react'
-import { Span, Paragraph } from '../../atoms'
+import React from 'react';
+import { Span, Paragraph } from '../../atoms';
+import Background from '../../../assets/images/Star.png';
 
 const ContentBlock = () => (
-  <div className="welcome-main-textWrap">
+  <div className="welcome-main-textWrap" style={{ backgroundImage: `url(${Background})` }}>
     <Span size="1" className="uppercase">
       MODERN STUDIO
     </Span>
@@ -16,6 +17,6 @@ const ContentBlock = () => (
       understanding.
     </Paragraph>
   </div>
-)
+);
 
-export default ContentBlock
+export default ContentBlock;

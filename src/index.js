@@ -7,7 +7,7 @@ const rootElement = document.querySelector('#root')
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />,
+    <App />
   </React.StrictMode>,
   rootElement
 )
